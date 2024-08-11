@@ -49,3 +49,9 @@ header {
     letter-spacing: 3px;
     opacity: 50%;
 }
+
+@media screen and (max-width: 600px) {
+    .other-links {
+        display: none;
+    }
+}

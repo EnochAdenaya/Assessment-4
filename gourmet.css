@@ -4,7 +4,9 @@
     padding: 0;
 }
 
-body {font-family: "Times New Roman", Georgia, Serif;}
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
 
 /* Navigation Bar */
 .nav_bar {
@@ -50,6 +52,16 @@ header {
     opacity: 50%;
 }
 
+/* Main Contents of the page */
+    .body-content {
+        height: 100px;
+        background-color: yellow;
+        width: 100%;
+        max-width: 1120px;
+        margin: auto;
+    }
+
+/* Media query for responsiveness of the weboage across different devices */
 @media screen and (max-width: 600px) {
     .other-links {
         display: none;

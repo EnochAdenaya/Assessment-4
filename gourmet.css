@@ -108,4 +108,8 @@ header {
     .other-links {
         display: none;
     }
+
+    .image, .beside-image {
+        width: 100%;
+    }
 }

@@ -109,6 +109,10 @@ header {
         display: none;
     }
 
+    .about-catering {
+        display: block;
+    }
+
     .image, .beside-image {
         width: 100%;
     }

@@ -128,7 +128,11 @@ header img {
     }
 
 /* Media query for responsiveness of the weboage across different devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
+
     .other-links {
         display: none;
     }

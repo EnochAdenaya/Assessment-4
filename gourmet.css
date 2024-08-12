@@ -6,6 +6,8 @@
 
 body {
     font-family: "Times New Roman", Georgia, Serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
@@ -43,6 +45,11 @@ header {
         position: relative;
 }
 
+header img {
+    min-height: 180px;
+    min-width: 520px;
+}
+
 .topic {
     position: absolute;
     bottom: 35px;
@@ -57,10 +64,10 @@ header {
         width: 100%;
         max-width: 1120px;
         margin: auto;
-        padding: 100px 10px;
     }
 
-    .about-catering {
+    /* The styling below is for all the boxes below the header */
+    .about-catering, .menu {
         display: flex;
     }
 
@@ -91,7 +98,7 @@ header {
     .beside-image-content p {
         font-size: 18px;
         margin-bottom: 20px;
-        line-height: 25px;
+        line-height: 30px;
     }
 
     .beside-image-content p:first-child {
@@ -103,13 +110,52 @@ header {
         opacity: 75%;
     }
 
+    .mark {
+        background-color: rgb(240, 240, 240);
+        padding: 5px;
+    }
+
+    /* A styling has been made for the topics in all the boxes using class ".beside-image-topic" and so, the styling of "Our Menu is not included in the following menu styling" */
+    .menu-content p:nth-child(odd) {
+        font-size: 20px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    .menu-content p:nth-child(even){
+        opacity: 75%;
+        margin-bottom: 50px;
+    }
+
 /* Media query for responsiveness of the weboage across different devices */
 @media screen and (max-width: 600px) {
     .other-links {
         display: none;
     }
 
-    .about-catering {
+    .about-catering{
+        display: block;
+    }
+
+    .image, .beside-image {
+        width: 100%;
+    }
+
+    .img-2 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .beside-image-content p:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
         display: block;
     }
 

@@ -39,9 +39,9 @@ body {
 
 /* Header section styling */
 header {
-        width: 100%;
-        position: relative;
-        overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 header img {
@@ -58,72 +58,133 @@ header img {
 }
 
 /* Main Contents of the page */
-    .body-content {
-        width: 100%;
-        max-width: 1120px;
-        margin: auto;
-    }
+.body-content {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+}
 
-    /* The styling below is for all the boxes below the header */
-    .about-catering, .menu {
-        display: flex;
-    }
+/* The styling below is for all the boxes below the header */
+.about-catering, .menu {
+    display: flex;
+}
 
-    .image {
-        width: 50%;
-        padding: 25px;
-        opacity: 75%;
-    }
+.image {
+    width: 50%;
+    padding: 25px;
+    opacity: 75%;
+}
 
-    .image img {
-        width: 100%;
-        height: auto;
-    }
+.image img {
+    width: 100%;
+    height: auto;
+}
 
-    .beside-image {
-        width: 50%;
-        padding: 25px;
-    }
+.beside-image {
+    width: 50%;
+    padding: 25px;
+}
 
-    .beside-image-topic {
-        font-size: 35px;
-        letter-spacing: 5px;
-        word-spacing: 3px;
-        text-align: center;
-        margin: 25px 0px 50px;
-    }
+.beside-image-topic, .contact-title {
+    font-size: 35px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    text-align: center;
+    margin: 25px 0px 50px;
+}
 
-    .beside-image-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
-        line-height: 30px;
-    }
+.beside-image-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
 
-    .beside-image-content p:first-child {
-        text-align: center;
-        letter-spacing: 5px;
-    }
+.beside-image-content p:first-child {
+    text-align: center;
+    letter-spacing: 5px;
+}
 
-    .beside-image-content p:last-child {
-        opacity: 75%;
-    }
+.beside-image-content p:last-child {
+    opacity: 75%;
+}
 
-    .mark {
-        background-color: rgb(240, 240, 240);
-        padding: 5px;
-    }
+.mark {
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+}
 
-    /* A styling has been made for the topics in all the boxes using class ".beside-image-topic" and so, the styling of "Our Menu is not included in the following menu styling" */
-    .menu-content p:nth-child(odd) {
-        font-size: 20px;
-        letter-spacing: 5px;
-        margin-bottom: 20px;
-    }
+hr {
+    opacity: 25%;
+    margin: 50px 0px;
+}
 
-    .menu-content p:nth-child(even){
-        opacity: 75%;
-        margin-bottom: 50px;
-    }
+/* A styling has been made for the topics in all the boxes using class ".beside-image-topic" and so, the styling of "Our Menu is not included in the following menu styling" */
+.menu-content p:nth-child(odd) {
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-content p:nth-child(even){
+    opacity: 75%;
+    margin-bottom: 50px;
+}
+
+/* Contact */
+.contact {
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.contact-title {
+    text-align: left;
+}
+
+.contact-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-content p:nth-child(2) {
+    font-weight: bold;
+    color: rgb(115, 115, 197);
+}
+
+input {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 5px;
+    margin-bottom: 25px;
+    border-style: none;
+    border-bottom: 1px solid gray;
+}
+
+button {
+    padding: 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(240, 240, 240);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: inherit;
+}
 
 /* Media query for responsiveness of the weboage across different devices */
 @media screen and (max-width: 600px) {

@@ -6,7 +6,8 @@
 
 body {
     font-family: "Times New Roman", Georgia, Serif;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
@@ -127,7 +128,7 @@ header img {
     }
 
 /* Media query for responsiveness of the weboage across different devices */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (max-device-width: 600px) {
     body {
         overflow-x: hidden;
     }
